@@ -1,6 +1,6 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
-const { UserModel } = require("../models/userModel");
+const { UserModel } = require("../models/userModel.js");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
