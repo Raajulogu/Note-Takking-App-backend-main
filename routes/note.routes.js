@@ -1,9 +1,9 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const authenticator = require("../middlewares/authenticator");
-const { NoteModel } = require("../models/NoteModel");
-const { UserModel } = require("../models/userModel");
+const authenticator = require("../middlewares/authenticator.js");
+const { NoteModel } = require("../models/NoteModel.js");
+const { UserModel } = require("../models/userModel.js");
 
 const noteRouter = express.Router();
 noteRouter.use(authenticator);
